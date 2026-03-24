@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+  <title>Haydar — Frío</title>
+  <meta name="description" content="Escucha Frío de Haydar en todas las plataformas."/>
+
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window,document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init','144294792682323');
+    fbq('track','PageView');
+
+    // Función personalizada para rastrear clics en música como ViewContent
+    function trackMusicClick(platform) {
+      fbq('track', 'ViewContent', {
+        content_name: 'Frío - ' + platform,
+        content_category: 'Lanzamiento Musical',
+        content_type: 'product'
+      });
+    }
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=144294792682323&ev=PageView&noscript=1"/></noscript>
+
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&family=Cinzel:wght@400;600&display=swap" rel="stylesheet"/>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --accent: #d4a8a6;
+      --accent2: #c3a3c0;
+      --white: #f0ece8;
+      --grey: rgba(240,236,232,0.5);
+      --card: rgba(20,16,28,0.72);
+      --border: rgba(212,168,166,0.2);
+    }
+
+    html, body {
+      background: #1a1420;
+      color: var(--white);
+      font-family: 'Raleway', sans-serif;
+      font-weight: 300;
+      min-height: 100vh;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body::before {
+      content: '';
+      position: fixed; inset: 0;
+      background-image: url('data:image/jpeg;base64,...'); /* Mantén tu base64 original aquí */
+      background-size: cover;
+      background-position: center;
+      filter: brightness(0.5) saturate(0.8);
+      z-index: -1;
+    }
+
+    .container {
+      max-width: 480px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .glass-card {
+      background: var(--card);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      width: 100%;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+    }
+
+    .art-container {
+      width: 180px;
+      height: 180px;
+      margin: 0 auto 25px;
+      position: relative;
+    }
+
+    .art-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+
+    h1 {
+      font-family: 'Cinzel', serif;
+      font-size: 24px;
+      letter-spacing: 4px;
+      margin-bottom: 8px;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+
+    .artist {
+      font-size: 13px;
+      letter-spacing: 3px;
+      color: var(--accent);
+      margin-bottom: 35px;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+    .links-container {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 40px;
+    }
+
+    .link-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 18px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 2px;
+      text-decoration: none;
+      color: var(--white);
+      transition: all 0.3s ease;
+    }
+
+    .link-item:hover {
+      background: rgba(255,255,255,0.07);
+      border-color: var(--accent);
+      transform: translateY(-1px);
+    }
+
+    .link-item span {
+      font-size: 13px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    .btn-action {
+      font-size: 10px;
+      letter-spacing: 1px;
+      border: 1px solid var(--accent);
+      padding: 6px 12px;
+      color: var(--accent);
+      text-transform: uppercase;
+    }
+
+    /* Formulario de Email */
+    .email-section {
+      margin-top: 20px;
+      padding-top: 30px;
+      border-top: 1px solid rgba(212,168,166,0.1);
+    }
+
+    .email-section p {
+      font-size: 11px;
+      letter-spacing: 1px;
+      margin-bottom: 15px;
+      color: var(--grey);
+      text-transform: uppercase;
+    }
+
+    #emailForm {
+      display: flex;
+      gap: 8px;
+    }
+
+    #emailInput {
+      flex: 1;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      padding: 10px 15px;
+      color: white;
+      font-family: 'Raleway', sans-serif;
+      font-size: 13px;
+      outline: none;
+    }
+
+    #submitBtn {
+      background: transparent;
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      padding: 0 20px;
+      cursor: pointer;
+      font-size: 11px;
+      text-transform: uppercase;
+      transition: all 0.3s;
+    }
+
+    #submitBtn:hover {
+      background: var(--accent);
+      color: #1a1420;
+    }
+
+    #emailSuccess, #emailError {
+      display: none;
+      font-size: 11px;
+      margin-top: 10px;
+      letter-spacing: 1px;
+    }
+
+    footer {
+      margin-top: auto;
+      padding: 40px 0;
+      font-size: 10px;
+      letter-spacing: 2px;
+      color: var(--grey);
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="glass-card">
+      <div class="art-container">
+        <img src="https://i.ibb.co/Vp8pXpZ/Portada-Frio.jpg" alt="Haydar - Frío Cover Art"/>
+      </div>
+
+      <h1>Frío</h1>
+      <p class="artist">Haydar</p>
+
+      <div class="links-container">
+        <a href="https://open.spotify.com/track/4u6m5..." class="link-item" onclick="trackMusicClick('Spotify')">
+          <span>Spotify</span>
+          <div class="btn-action">Escuchar</div>
+        </a>
+        <a href="https://music.apple.com/..." class="link-item" onclick="trackMusicClick('Apple Music')">
+          <span>Apple Music</span>
+          <div class="btn-action">Escuchar</div>
+        </a>
+        <a href="https://www.youtube.com/watch?v=..." class="link-item" onclick="trackMusicClick('YouTube')">
+          <span>YouTube</span>
+          <div class="btn-action">Ver Video</div>
+        </a>
+      </div>
+
+      <div class="email-section">
+        <p>Únete a la comunidad</p>
+        <div id="emailForm">
+          <input type="email" id="emailInput" placeholder="TU EMAIL"/>
+          <button id="submitBtn" onclick="submitEmail()">Enviar</button>
+        </div>
+        <div id="emailSuccess">Gracias por sumarte.</div>
+        <div id="emailError">Ocurrió un error. Intenta de nuevo.</div>
+      </div>
+    </div>
+
+    <footer>© 2026 Haydar Música</footer>
+  </div>
+
+  <script>
+    const SHEET_URL = 'TU_URL_DE_APPS_SCRIPT'; // Asegúrate de poner tu URL aquí
+
+    function submitEmail() {
+      const input = document.getElementById('emailInput');
+      const btn = document.getElementById('submitBtn');
+      const form = document.getElementById('emailForm');
+      const success = document.getElementById('emailSuccess');
+      const error = document.getElementById('emailError');
+
+      if (!input.value || !input.value.includes('@')) {
+        input.style.outline = '1px solid #ff4444';
+        input.focus();
+        return;
+      }
+      
+      input.style.outline = 'none';
+      btn.textContent = '...';
+      btn.disabled = true;
+
+      window.handleResponse = function(data) {
+        fbq('track', 'Lead', {content_name: 'EmailCapture'});
+        form.style.display = 'none';
+        success.style.display = 'block';
+      };
+
+      const url = SHEET_URL + '?email=' + encodeURIComponent(input.value) + '&source=frio-landing&callback=handleResponse';
+      const script = document.createElement('script');
+      script.src = url;
+      document.body.appendChild(script);
+    }
+  </script>
+</body>
+</html>
