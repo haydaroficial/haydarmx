@@ -6,23 +6,21 @@
   <title>Haydar — Frío</title>
   <meta name="description" content="Escucha Frío de Haydar en todas las plataformas."/>
 
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '144294792682323');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=144294792682323&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+  <!-- Facebook Pixel -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window,document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init','144294792682323');
+    fbq('track','PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=144294792682323&ev=PageView&noscript=1"/></noscript>
 
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&family=Cinzel:wght@400;600&display=swap" rel="stylesheet"/>
 
@@ -344,27 +342,27 @@ src="https://www.facebook.com/tr?id=144294792682323&ev=PageView&noscript=1"
 
     <!-- Platform buttons -->
     <div class="platforms">
-      <a class="plat-btn" href="https://open.spotify.com/track/1CclK4mwWovrvgPdX71t77" target="_blank" onclick="fbq('track','Lead',{content_name:'Spotify'})">
+      <a class="plat-btn" href="https://open.spotify.com/track/1CclK4mwWovrvgPdX71t77" target="_blank" onclick="fbq('track','ViewContent',{content_name:'Spotify',content_type:'music'})">
         <span class="left"><span class="icon sp">🎵</span> Spotify</span>
         <span class="arrow">→</span>
       </a>
-      <a class="plat-btn" href="https://music.apple.com/us/album/fantasmas-deluxe/1742667007" target="_blank" onclick="fbq('track','Lead',{content_name:'AppleMusic'})">
+      <a class="plat-btn" href="https://music.apple.com/us/album/fantasmas-deluxe/1742667007" target="_blank" onclick="fbq('track','ViewContent',{content_name:'AppleMusic',content_type:'music'})">
         <span class="left"><span class="icon am">🍎</span> Apple Music</span>
         <span class="arrow">→</span>
       </a>
-      <a class="plat-btn" href="https://music.youtube.com/watch?v=WAARvCXM9HE&si=w78NiZSL6fvAaEX5" target="_blank" onclick="fbq('track','Lead',{content_name:'YouTubeMusic'})">
+      <a class="plat-btn" href="https://music.youtube.com/watch?v=WAARvCXM9HE&si=w78NiZSL6fvAaEX5" target="_blank" onclick="fbq('track','ViewContent',{content_name:'YouTubeMusic',content_type:'music'})">
         <span class="left"><span class="icon ym">▶</span> YouTube Music</span>
         <span class="arrow">→</span>
       </a>
-      <a class="plat-btn" href="https://tidal.com/track/246404450/u" target="_blank" onclick="fbq('track','Lead',{content_name:'Tidal'})">
+      <a class="plat-btn" href="https://tidal.com/track/246404450/u" target="_blank" onclick="fbq('track','ViewContent',{content_name:'Tidal',content_type:'music'})">
         <span class="left"><span class="icon td">◈</span> Tidal</span>
         <span class="arrow">→</span>
       </a>
-      <a class="plat-btn" href="https://haydar.bandcamp.com/album/fantasmas-deluxe" target="_blank" onclick="fbq('track','Lead',{content_name:'Bandcamp'})">
+      <a class="plat-btn" href="https://haydar.bandcamp.com/album/fantasmas-deluxe" target="_blank" onclick="fbq('track','ViewContent',{content_name:'Bandcamp',content_type:'music'})">
         <span class="left"><span class="icon bc">🎸</span> Bandcamp</span>
         <span class="arrow">→</span>
       </a>
-      <a class="plat-btn" href="https://www.youtube.com/watch?v=62wGbHgIP-w" target="_blank" onclick="fbq('track','Lead',{content_name:'YouTube'})">
+      <a class="plat-btn" href="https://www.youtube.com/watch?v=62wGbHgIP-w" target="_blank" onclick="fbq('track','ViewContent',{content_name:'YouTube',content_type:'music'})">
         <span class="left"><span class="icon yt">▶</span> Video Oficial — YouTube</span>
         <span class="arrow">→</span>
       </a>
@@ -399,7 +397,7 @@ src="https://www.facebook.com/tr?id=144294792682323&ev=PageView&noscript=1"
 
     <!-- Main site -->
     <div class="main-link">
-      <a href="https://musicadehaydar.com" onclick="fbq('track','ViewContent',{content_name:'MainSite'})">
+      <a href="https://musicadehaydar.com" onclick="fbq('track','ViewContent',{content_name:'MainSite',content_type:'website'})">
         Conoce más sobre Haydar →
       </a>
     </div>
@@ -436,7 +434,7 @@ src="https://www.facebook.com/tr?id=144294792682323&ev=PageView&noscript=1"
       btn.disabled = true;
 
       window.handleResponse = function(data) {
-        fbq('track', 'Lead', {content_name: 'EmailCapture'});
+        fbq('track', 'CompleteRegistration', {content_name: 'EmailCapture',currency:'MXN',value:0});
         form.style.display = 'none';
         success.style.display = 'block';
         error.style.display = 'none';
@@ -446,7 +444,7 @@ src="https://www.facebook.com/tr?id=144294792682323&ev=PageView&noscript=1"
       const script = document.createElement('script');
       script.src = url;
       script.onerror = function() {
-        fbq('track', 'Lead', {content_name: 'EmailCapture'});
+        fbq('track', 'CompleteRegistration', {content_name: 'EmailCapture',currency:'MXN',value:0});
         form.style.display = 'none';
         success.style.display = 'block';
       };
